@@ -35,14 +35,18 @@ export const RandomDog = () => {
   return (
     <div className="App">
       {isImgForm ? (
-        <img style={{ border: "1px solid teal", width: 800, height: 600 }} src={img} alt="" />
+        <img
+          style={{ border: "1px solid teal", width: 800, height: 600, marginBottom: 10 }}
+          src={img}
+          alt=""
+        />
       ) : (
         <div>
           <video
             autoPlay
             loop
             muted
-            style={{ border: "1px solid teal", width: 800, height: 600 }}
+            style={{ border: "1px solid teal", width: 800, height: 600, marginBottom: 10 }}
             controls
             src={img}
             poster={<Loader />}
@@ -50,7 +54,7 @@ export const RandomDog = () => {
         </div>
       )}
 
-      <MyButton onClick={newDog}>Neus Bild</MyButton>
+      <MyButton onClick={newDog}>Weiter</MyButton>
     </div>
   );
 };

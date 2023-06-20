@@ -1,27 +1,20 @@
 .myBtn {
-  padding: 5px 15px;
-  margin-top: 10px;
+  padding: 8px 20px;
   color: white;
   font-size: 14px;
   background: teal;
-  border: 1px solid teal;
+  border: 1px solid transparent;
   cursor: pointer;
-  border-radius: 15px;
-  box-shadow: 2px 2px 9px rgb(106, 106, 106), 2px 2px 9px teal;
+  border-radius: 20px;
 }
 
 .myBtn:hover {
-  background-color: transparent;
+  border: 1px solid teal;
   color: teal;
-  box-shadow: none;
-}
-
-.myBtn:hover {
-  transform: scale(1.04);
+  background-color: transparent;
 }
 
 .myBtn:active {
-  background-color: teal;
+  background: teal;
   color: white;
-  transform: scale(1.025);
 }
