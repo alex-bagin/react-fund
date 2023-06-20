@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: baseline;
+  padding-bottom: 20px;
+  height: 60px;
+  width: 100vw;
+  font-size: x-large;
+  font-weight: 800;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  background-color: rgb(206, 206, 206);
+}
+.navbar__login {
+  margin-right: 10px;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.navbar__links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+}

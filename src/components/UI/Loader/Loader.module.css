@@ -1,0 +1,51 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.loader__element {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 13px dotted;
+  animation-name: rotate, bgChange;
+  animation-duration: 8s, 8s;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: forwards, backwards;
+}
+
+@keyframes bgChange {
+  from {
+    border-color: teal;
+  }
+  to {
+    border-color: rgb(0, 240, 240);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+.loader__content {
+  position: absolute;
+  color: rgb(0, 44, 190);
+
+  animation: textScale 8s infinite forwards;
+}
+
+@keyframes textScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
