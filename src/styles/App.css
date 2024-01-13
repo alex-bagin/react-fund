@@ -4,25 +4,39 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #d1e5fd;
+}
+
 #root {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.welcome {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80dvh;
+}
+
 .App {
+  position: absolute;
+  top: 100px;
   width: 800px;
 }
 
 .post {
   display: flex;
   padding: 15px;
-  border: 2px solid teal;
+  border: 2px solid rgb(0, 110, 255);
   margin-top: 15px;
   justify-content: space-between;
   align-items: center;
-}
-.post__content {
 }
 
 input {
@@ -54,7 +68,7 @@ input {
 
 .page {
   padding: 10px;
-  border: 1px solid teal;
+  border: 1px solid rgb(0, 110, 255);
   cursor: pointer;
 }
 
@@ -65,4 +79,5 @@ input {
 
 .post__btns {
   display: flex;
+  gap: 1rem;
 }

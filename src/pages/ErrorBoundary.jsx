@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { useAsyncError, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import MyButton from "../components/UI/button/MyButton";
 import { AuthContext } from "../context";
 
 export const ErrorBoundary = () => {
-  const { isAuth, setAuth } = useContext(AuthContext);
+  const { isAuth } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const toHome = (event) => {
@@ -17,7 +17,7 @@ export const ErrorBoundary = () => {
   };
 
   return (
-    <div>
+    <div className="App">
       <h1 style={{ margin: "30px 0", color: "red" }}>Oops! Die Seite wurde nicht gefunden!</h1>
       {isAuth ? (
         <MyButton onClick={toHome}>Zur Homepage</MyButton>

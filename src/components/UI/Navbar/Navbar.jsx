@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../context";
 import MyButton from "../button/MyButton";
 import classes from "./Navbar.module.css";
@@ -15,21 +15,49 @@ const Navbar = () => {
     return navigate("/");
   };
   return (
-    <div className={classes.navbar}>
+    <nav className={classes.navbar}>
       {isAuth && (
         <>
           <div className={classes.navbar__logout}>
             <MyButton onClick={logout}>Logout</MyButton>
           </div>
           <div className={classes.navbar__links}>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/posts"}>Posts</Link>
-            <Link to={"/dogs"}>Dogs</Link>
+            <NavLink
+              to="/"
+              className={({ isActive, isPending }) =>
+                isPending ? classes.pending : isActive ? classes.active : ""
+              }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive, isPending }) =>
+                isPending ? classes.pending : isActive ? classes.active : ""
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/posts"
+              className={({ isActive, isPending }) =>
+                isPending ? classes.pending : isActive ? classes.active : ""
+              }
+            >
+              Posts
+            </NavLink>
+            <NavLink
+              to="/dogs"
+              className={({ isActive, isPending }) =>
+                isPending ? classes.pending : isActive ? classes.active : ""
+              }
+            >
+              Dogs
+            </NavLink>
           </div>
         </>
       )}
-    </div>
+    </nav>
   );
 };
 

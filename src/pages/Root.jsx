@@ -14,15 +14,7 @@ const Root = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-around",
-        height: "80vh",
-        alignItems: "center",
-      }}
-    >
+    <div className="welcome">
       <h1>Herzlich Willkommen!</h1>
       <h3>Melden Sie sich bitte jetzt an!</h3>
       <MyButton onClick={login}>Anmelden</MyButton>

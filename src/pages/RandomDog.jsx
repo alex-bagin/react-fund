@@ -17,26 +17,21 @@ export const RandomDog = () => {
   };
   useEffect(() => {
     const fileFormat = img.slice(-4).toLowerCase();
-    console.log(fileFormat);
     const map = {
       img: { jpg: ".jpg", png: ".png", jpeg: "jpeg", gif: ".gif" },
       video: { mp4: ".mp4", webm: "webm" },
     };
     if (Object.values(map.video).includes(fileFormat)) {
-      console.log("VIDEO");
       setIsImgForm(false);
     } else {
-      console.log("IMG");
       setIsImgForm(true);
     }
   }, [isImgForm, img]);
-
-  console.log(isImgForm, img);
   return (
     <div className="App">
       {isImgForm ? (
         <img
-          style={{ border: "1px solid teal", width: 800, height: 600, marginBottom: 10 }}
+          style={{ border: "1px solid blue", width: 800, height: 600, marginBottom: 10 }}
           src={img}
           alt=""
         />
@@ -46,7 +41,7 @@ export const RandomDog = () => {
             autoPlay
             loop
             muted
-            style={{ border: "1px solid teal", width: 800, height: 600, marginBottom: 10 }}
+            style={{ border: "1px solid blue", width: 800, height: 600, marginBottom: 10 }}
             controls
             src={img}
             poster={<Loader />}

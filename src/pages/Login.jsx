@@ -1,4 +1,4 @@
-import React, { useContext, useId, useState } from "react";
+import React, { useContext, useState } from "react";
 import MyInput from "../components/UI/input/MyInput";
 import MyButton from "../components/UI/button/MyButton";
 import { AuthContext } from "../context";
@@ -7,7 +7,6 @@ import PasswordField from "../components/PasswordField";
 
 const Login = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
-  const [users, setUsers] = useState([]);
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const navigate = useNavigate();
 
@@ -15,12 +14,11 @@ const Login = () => {
     event.preventDefault();
     setIsAuth(true);
     localStorage.setItem("auth", "true");
-    console.log(localStorage.getItem("auth"));
     return navigate("/");
   };
 
   return (
-    <div>
+    <div className="App">
       <h1>LogIn...</h1>
       <form onSubmit={login}>
         <MyInput

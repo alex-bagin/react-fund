@@ -1,5 +1,4 @@
 import axios from "axios";
-import { usePosts } from "../hooks/usePost";
 
 export default class PostService {
   static async getAll(limit = 10, page = 1) {

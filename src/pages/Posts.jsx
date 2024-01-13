@@ -58,7 +58,7 @@ function Posts() {
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
       </MyModal>
-      <hr style={{ margin: "15px 0" }} />
+      <hr style={{ margin: "15px 0", border: "1px solid blue" }} />
       <PostFilter filter={filter} setFilter={setFilter} />
       <MySelect
         value={limit}

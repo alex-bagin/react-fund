@@ -15,6 +15,7 @@ function App() {
     }
     setIsLoading(false);
   }, []);
+
   return (
     <AuthContext.Provider
       value={{
@@ -24,7 +25,7 @@ function App() {
       }}
     >
       <BrowserRouter>
-        <Navbar />
+        {isAuth && <Navbar />}
         <AppRouter />
       </BrowserRouter>
     </AuthContext.Provider>

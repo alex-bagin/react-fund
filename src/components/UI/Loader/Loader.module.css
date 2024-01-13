@@ -18,10 +18,10 @@
 
 @keyframes bgChange {
   from {
-    border-color: teal;
+    border-color: rgb(0, 110, 255) rgb(0, 110, 255);
   }
   to {
-    border-color: rgb(0, 240, 240);
+    border-color: rgb(0, 174, 255);
   }
 }
 

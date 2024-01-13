@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useId, useState } from "react";
+import React, { useState } from "react";
 import MyInput from "../components/UI/input/MyInput";
 import MyButton from "../components/UI/button/MyButton";
-import { AuthContext } from "../context";
 import { useNavigate } from "react-router-dom";
 import PasswordField from "../components/PasswordField";
 
@@ -21,7 +20,7 @@ const Registration = () => {
   console.log(users);
 
   return (
-    <div>
+    <div className="App">
       <h1>Account erstellen</h1>
       <form>
         <MyInput
