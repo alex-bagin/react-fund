@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PostService from "../API/PostService";
@@ -21,6 +22,7 @@ const PostIdPage = () => {
   useEffect(() => {
     fetchPostById(params.id);
     fetchComments(params.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

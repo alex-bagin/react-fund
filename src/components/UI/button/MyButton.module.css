@@ -15,9 +15,11 @@
   color: white;
   background-color: rgb(0, 73, 170);
   transition: ease-in-out;
+  box-shadow: 0px 0px 20px 5px rgba(0, 110, 255, 0.499);
 }
 
 .myBtn:active {
   color: white;
   background-color: rgb(0, 45, 104);
+  box-shadow: 0px 0px 25px 8px rgba(0, 110, 255, 0.6);
 }
