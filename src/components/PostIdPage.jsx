@@ -26,7 +26,7 @@ const PostIdPage = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app container">
       <h1>
         Sie haben die Seite des Posts mit der ID{" "}
         <strong style={{ color: "green", fontWeight: "bold", fontSize: 36, fontStyle: "italic" }}>

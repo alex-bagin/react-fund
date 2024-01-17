@@ -14,7 +14,9 @@ const PostItem = function (props) {
         <div>{props.post.body}</div>
       </div>
       <div className="post__btns">
-        <MyButton onClick={useLinkClickHandler(`/posts/${props.post.id}`)}>Öffnen</MyButton>
+        <MyButton onClick={useLinkClickHandler(`/react-fund/posts/${props.post.id}`)}>
+          Öffnen
+        </MyButton>
         <MyButton onClick={() => props.remove(props.post)}>Entfernen</MyButton>
       </div>
     </div>
