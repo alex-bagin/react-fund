@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-fund/static/css/main.209414bf.css",
-    "main.js": "/react-fund/static/js/main.b3123d54.js",
+    "main.css": "/react-fund/static/css/main.2c621596.css",
+    "main.js": "/react-fund/static/js/main.85dc954f.js",
     "static/media/home.jpg": "/react-fund/static/media/home.f13b4ffdc16faf3f1c6c.jpg",
     "index.html": "/react-fund/index.html",
-    "main.209414bf.css.map": "/react-fund/static/css/main.209414bf.css.map",
-    "main.b3123d54.js.map": "/react-fund/static/js/main.b3123d54.js.map"
+    "main.2c621596.css.map": "/react-fund/static/css/main.2c621596.css.map",
+    "main.85dc954f.js.map": "/react-fund/static/js/main.85dc954f.js.map"
   },
   "entrypoints": [
-    "static/css/main.209414bf.css",
-    "static/js/main.b3123d54.js"
+    "static/css/main.2c621596.css",
+    "static/js/main.85dc954f.js"
   ]
 }
