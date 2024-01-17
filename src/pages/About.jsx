@@ -3,7 +3,7 @@ import "../styles/App.css";
 
 const About = () => {
   return (
-    <div className="App">
+    <div className="app container">
       <h1 style={{ display: "flex", justifyContent: "center", marginBottom: 30 }}>About</h1>
       <h2 style={{ marginBottom: 30 }}>Lorem ipsum dolor sit amet.</h2>
       <p>

@@ -4,22 +4,27 @@ import MyButton from "../components/UI/button/MyButton";
 
 const Root = () => {
   const navigate = useNavigate();
+
   const login = (event) => {
     event.preventDefault();
-    navigate("/login");
+    navigate("/react-fund/login");
   };
+
   const register = (event) => {
     event.preventDefault();
-    navigate("/register");
+    navigate("/react-fund/register");
   };
 
   return (
     <div className="welcome">
       <h1>Herzlich Willkommen!</h1>
-      <h3>Melden Sie sich bitte jetzt an!</h3>
+      <br />
+
       <MyButton onClick={login}>Anmelden</MyButton>
-      <p>oder</p>
+      <h3>oder</h3>
       <MyButton onClick={register}>Account erstellen</MyButton>
+
+      <br />
       <img style={{ width: "350px" }} src="https://www.aulacc.net/pages/images/cand.png" alt="" />
     </div>
   );

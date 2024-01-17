@@ -15,6 +15,17 @@
   min-width: 450px;
 }
 
+@media (max-width: 1024px) {
+  .myModalContent {
+    min-width: 300px;
+  }
+}
+@media (max-width: 640px) {
+  .myModalContent {
+    min-width: 200px;
+  }
+}
+
 .myModal.active {
   display: flex;
   justify-content: center;

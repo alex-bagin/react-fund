@@ -9,11 +9,11 @@ export const ErrorBoundary = () => {
 
   const toHome = (event) => {
     event.preventDefault();
-    navigate("/");
+    navigate("/react-fund/");
   };
   const toLogin = (event) => {
     event.preventDefault();
-    navigate("/login");
+    navigate("/react-fund/login");
   };
 
   return (

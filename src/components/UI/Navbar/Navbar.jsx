@@ -6,13 +6,14 @@ import classes from "./Navbar.module.css";
 
 const Navbar = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
+  console.log("isAuth: ", isAuth);
   const navigate = useNavigate();
 
   const logout = (event) => {
     event.preventDefault();
     setIsAuth(false);
     localStorage.removeItem("auth");
-    return navigate("/");
+    return navigate("/react-fund/");
   };
   return (
     <nav className={classes.navbar}>
@@ -23,7 +24,7 @@ const Navbar = () => {
           </div>
           <div className={classes.navbar__links}>
             <NavLink
-              to="/"
+              to="/react-fund/"
               className={({ isActive, isPending }) =>
                 isPending ? classes.pending : isActive ? classes.active : ""
               }
@@ -31,7 +32,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/about"
+              to="/react-fund/about"
               className={({ isActive, isPending }) =>
                 isPending ? classes.pending : isActive ? classes.active : ""
               }
@@ -39,7 +40,7 @@ const Navbar = () => {
               About
             </NavLink>
             <NavLink
-              to="/posts"
+              to="/react-fund/posts"
               className={({ isActive, isPending }) =>
                 isPending ? classes.pending : isActive ? classes.active : ""
               }
@@ -47,7 +48,7 @@ const Navbar = () => {
               Posts
             </NavLink>
             <NavLink
-              to="/dogs"
+              to="/react-fund/dogs"
               className={({ isActive, isPending }) =>
                 isPending ? classes.pending : isActive ? classes.active : ""
               }

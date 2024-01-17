@@ -3,13 +3,11 @@ import home from "../assets/home.jpg";
 
 const Home = () => {
   return (
-    <div className="App">
-      <h1>Herzlich Willkommen bei ReactJS!!!</h1>
-      <img
-        style={{ border: "1px solid blue", width: 800, height: 600, marginTop: 30 }}
-        src={home}
-        alt="Home"
-      />
+    <div className="app">
+      <div className="home__inner">
+        <h2>Welcome</h2>
+        <img src={home} alt="Home" />
+      </div>
     </div>
   );
 };

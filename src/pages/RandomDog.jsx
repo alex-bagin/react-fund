@@ -28,27 +28,16 @@ export const RandomDog = () => {
     }
   }, [isImgForm, img]);
   return (
-    <div className="App">
-      {isImgForm ? (
-        <img
-          style={{ border: "1px solid blue", width: 800, height: 600, marginBottom: 10 }}
-          src={img}
-          alt=""
-        />
-      ) : (
-        <div>
-          <video
-            autoPlay
-            loop
-            muted
-            style={{ border: "1px solid blue", width: 800, height: 600, marginBottom: 10 }}
-            controls
-            src={img}
-            poster={<Loader />}
-          />
-        </div>
-      )}
-
+    <div className="app">
+      <div className="dogs__inner">
+        {isImgForm ? (
+          <img src={img} alt="" />
+        ) : (
+          <div>
+            <video autoPlay loop muted controls src={img} poster={<Loader />} />
+          </div>
+        )}
+      </div>
       <MyButton onClick={newDog}>Weiter</MyButton>
     </div>
   );
