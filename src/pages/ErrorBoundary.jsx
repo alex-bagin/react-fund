@@ -17,7 +17,7 @@ export const ErrorBoundary = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <h1 style={{ margin: "30px 0", color: "red" }}>Oops! Die Seite wurde nicht gefunden!</h1>
       {isAuth ? (
         <MyButton onClick={toHome}>Zur Homepage</MyButton>

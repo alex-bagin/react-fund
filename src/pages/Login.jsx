@@ -4,7 +4,6 @@ import MyInput from "../components/UI/input/MyInput";
 import MyButton from "../components/UI/button/MyButton";
 import { AuthContext } from "../context";
 import { useNavigate } from "react-router-dom";
-import PasswordField from "../components/PasswordField";
 
 const Login = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
@@ -27,14 +26,18 @@ const Login = () => {
           <MyInput
             value={user.email}
             onChange={(e) => setUser({ email: e.target.value })}
-            type="text"
+            type="email"
             name="email"
             id="email"
             placeholder="Email"
+            required
           />
-          <PasswordField
+          <MyInput
+            placeholder="Passwort"
+            type="password"
             value={user.password}
             onChange={(e) => setUser({ password: e.target.value })}
+            required
           />
           <MyButton>Login</MyButton>
         </form>

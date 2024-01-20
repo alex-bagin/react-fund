@@ -25,7 +25,7 @@ const Root = () => {
       <MyButton onClick={register}>Account erstellen</MyButton>
 
       <br />
-      <img style={{ width: "350px" }} src="https://www.aulacc.net/pages/images/cand.png" alt="" />
+      <img src="https://www.aulacc.net/pages/images/cand.png" alt="" />
     </div>
   );
 };

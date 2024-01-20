@@ -17,27 +17,30 @@ const PostForm = ({ create }) => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={addNewPost}>
         {/* Input controlled */}
         <MyInput
           value={post.title}
           onChange={(elem) => setPost({ ...post, title: elem.target.value })}
           type="text"
           placeholder="Name des Posts"
+          required
         />
         <MyInput
           value={post.email}
           onChange={(elem) => setPost({ ...post, email: elem.target.value })}
           type="email"
           placeholder="Ihre Email"
+          required
         />
         <MyInput
           value={post.body}
           onChange={(elem) => setPost({ ...post, body: elem.target.value })}
           type="text"
           placeholder="Beschreibung des Posts"
+          required
         />
-        <MyButton onClick={addNewPost}>Post erstellen</MyButton>
+        <MyButton>Post erstellen</MyButton>
       </form>
     </div>
   );
